@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B. Sasi Nithin | Portfolio</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;scroll-behavior:smooth;}
+body{background:#f4f4f4;color:#333;}
+header{background:#111;padding:15px 50px;position:fixed;width:100%;top:0;}
+nav{display:flex;justify-content:space-between;align-items:center;}
+nav ul{list-style:none;display:flex;}
+nav ul li{margin-left:20px;}
+nav ul li a{color:white;text-decoration:none;font-weight:bold;}
+.logo{color:#00adb5;}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right,#00adb5,#222831);color:white;padding-top:60px;}
+.hero span{color:yellow;}
+.hero button{margin-top:20px;padding:10px 20px;border:none;background:yellow;font-weight:bold;cursor:pointer;border-radius:5px;}
+section{padding:80px 50px;text-align:center;}
+h2{margin-bottom:30px;color:#00adb5;}
+.card{background:white;padding:20px;margin:15px auto;width:60%;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+.skills-container{display:flex;justify-content:center;flex-wrap:wrap;}
+.skill{background:#00adb5;color:white;padding:10px 15px;margin:10px;border-radius:20px;}
+footer{background:#111;color:white;padding:15px;text-align:center;}
+@media(max-width:768px){.card{width:90%;}nav ul{display:none;}}
+</style>
+
+</head>
+<body>
+
+<header>
+<nav>
+<h2 class="logo">Sasi Nithin</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Hello, I'm <span>B. Sasi Nithin</span></h1>
+<p>Aspiring Software Developer | Java | JDBC | MySQL</p>
+<button onclick="scrollToContact()">Contact Me</button>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p>
+Aspiring Software Developer with strong knowledge of Java,
+Object-Oriented Programming, and JDBC. Passionate about
+building scalable and efficient applications.
+</p>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<h3>B.Tech – Computer Science Engineering</h3>
+<p>2023 – Present</p>
+</div>
+<div class="card">
+<h3>Intermediate (91.7%)</h3>
+<p>2023</p>
+</div>
+<div class="card">
+<h3>SSC (100%)</h3>
+<p>2021</p>
+</div>
+</section>
+
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="skills-container">
+<div class="skill">Java</div>
+<div class="skill">OOP</div>
+<div class="skill">JDBC</div>
+<div class="skill">MySQL</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Python (Basic)</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="card">
+<h3>Student Management System</h3>
+<p>Java + MySQL + JDBC</p>
+<p>Console-based application implementing CRUD operations.</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<p>📍 Eluru, Andhra Pradesh</p>
+<p>📞 +91-9059693511</p>
+<p>📧 sasinithin20@gmail.com</p>
+</section>
+
+<footer>
+<p>© 2026 B. Sasi Nithin | All Rights Reserved</p>
+</footer>
+
+<script>
+function scrollToContact(){
+document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
